@@ -10,10 +10,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.INF04_02_2301_SG"
+        android:theme="@style/Theme.ListaDodatkoweZadanie"
         tools:targetApi="31">
 
-        <activity android:name=".listaAndr"
+        <activity android:name=".lista"
             android:exported="true">
 
             <intent-filter>
