@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tytul"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:background="#558B2F"
+            android:text="Właściwości czcionki"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="29dp" />
+
+        <TextView
+            android:id="@+id/teskt1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Rozmiar:"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <SeekBar
+            android:id="@+id/suwak"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:max="40"
+            android:min="0"
+            android:progress="10"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tekst2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/przycisk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="145dp"
+            android:layout_marginRight="145dp"
+            android:backgroundTint="#558B2F"
+            android:text=">>"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+</LinearLayout>
