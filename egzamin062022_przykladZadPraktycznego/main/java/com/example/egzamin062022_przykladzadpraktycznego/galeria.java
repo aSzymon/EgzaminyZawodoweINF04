@@ -75,29 +75,23 @@ public class galeria extends AppCompatActivity {
         przyciskNastepny.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                wskaznik++;
-
                 //Toast.makeText(galeria.this, String.valueOf(wskaznik), Toast.LENGTH_SHORT).show();
 
                 if (wskaznik == 1){
-                    obraz.setImageResource(R.drawable.kot1);
+                    obraz.setImageResource(R.drawable.kot2);
+                    wskaznik = 2;
 
                 } else if (wskaznik == 2) {
-                    obraz.setImageResource(R.drawable.kot2);
+                    obraz.setImageResource(R.drawable.kot3);
+                    wskaznik = 3;
 
                 } else if (wskaznik == 3){
-                    obraz.setImageResource(R.drawable.kot3);
+                    obraz.setImageResource(R.drawable.kot4);
+                    wskaznik = 4;
 
                 } else if (wskaznik == 4){
 
-                    obraz.setImageResource(R.drawable.kot4);
-                    wskaznik = 0;
-
-                } else if (wskaznik == 5){
-                    wskaznik = 0;
-
-                }else if (wskaznik == 0) {
+                    obraz.setImageResource(R.drawable.kot1);
                     wskaznik = 1;
 
                 }
@@ -108,27 +102,23 @@ public class galeria extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                wskaznik--;
-
-                if (wskaznik == 0) {
-
-                    wskaznik = 4;
-
-                }
-
                 //.makeText(galeria.this, String.valueOf(wskaznik), Toast.LENGTH_SHORT).show();
 
-                if (wskaznik == 4) {
+                if (wskaznik == 1) {
                     obraz.setImageResource(R.drawable.kot4);
+                    wskaznik = 4;
+
+                } else if (wskaznik == 4){
+                    obraz.setImageResource(R.drawable.kot3);
+                    wskaznik = 3;
 
                 } else if (wskaznik == 3){
-                    obraz.setImageResource(R.drawable.kot3);
+                    obraz.setImageResource(R.drawable.kot2);
+                    wskaznik = 2;
 
                 } else if (wskaznik == 2){
-                    obraz.setImageResource(R.drawable.kot2);
-
-                } else if (wskaznik == 1){
                     obraz.setImageResource(R.drawable.kot1);
+                    wskaznik = 1;
 
                 }
 
